@@ -59,11 +59,11 @@ public class ArrayList<T>
   public T RemoveAt(int index)
   {
 
-   // indexer property validate if index is in range and returns
-   // the element at the current index
+    // indexer property validate if index is in range and returns
+    // the element at the current index
 
     T element = this[index];
-     this[index] = default;
+    this[index] = default;
     this.Shift(index);
     this.Count--;
 
